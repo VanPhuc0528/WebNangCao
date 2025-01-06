@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <link rel="stylesheet" href="/css/layout.css">
+    <script defer src="/js/layout.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-left">
+                <h1>Website Header</h1>
+                <nav>
+                    <ul class="nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-right">
+                <ul class="auth-nav">
+                    <li class="auth-item" data-authenticated="true">
+                        <span class="auth-text">Xin chào, <span class="username">User</span></span>
+                    </li>
+                    <li class="auth-item" data-authenticated="true">
+                        <button class="logout-button" onclick="handleLogout()">Logout</button>
+                    </li>
+                    <li class="auth-item" data-authenticated="false">
+                        <button class="logout-button" onclick="handleLogout()">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Website Footer. All rights reserved.</p>
+    </footer>
+        <p>&copy; 2024 Website Footer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
